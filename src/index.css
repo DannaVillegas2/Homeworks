@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+:root{font-family:Inter,Arial,sans-serif;color:#173624;background:#fff;font-synthesis:none;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-width:320px}button,input,select,textarea{font:inherit}button{cursor:pointer}a{color:#168b34}h1,h2,h3{letter-spacing:-.35px}h1{font-size:36px;line-height:1.2}h2{font-size:25px}p{line-height:1.6}button:disabled{cursor:not-allowed;opacity:.5}input:focus-visible,button:focus-visible,a:focus-visible,select:focus-visible{outline:3px solid #f28c28;outline-offset:2px}
+#root{min-height:100vh}.app-layout{min-height:100vh;display:flex;flex-direction:column}.app-layout>main{flex:1}
+.pagina-contenido,.seccion-contenido{max-width:1440px;width:100%;margin:0 auto;padding:48px 64px}
+.pagina-contenido>h1,.seccion-contenido>h1{font-size:36px;font-weight:800;margin:0 0 16px;color:#173624}
+.pagina-contenido>.subtitulo,.subtitulo{margin:0 0 35px;color:#697970;font-size:16px}.seccion-contenido h2{margin:0;color:#173624;font-size:28px;font-weight:800}
+.boton-verde{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:44px;padding:10px 19px;border:0;border-radius:8px;background:#168b34;color:#fff;text-decoration:none;font-size:15px;font-weight:700;transition:background .2s}
+.boton-verde:hover:not(:disabled){background:#0d6926}.boton-naranja{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 33px;border:0;border-radius:8px;background:#f28c28;color:#fff;font-weight:700;text-decoration:none}.boton-naranja:hover{background:#dc7617}
+.boton-secundario{background:#fff;border:1px solid #168b34;border-radius:8px;color:#168b34;font-weight:700;padding:13px 28px}.boton-secundario:hover{background:#f4f7f5}.boton-enlace{border:0;padding:0;background:none;color:#168b34;font-weight:700;text-decoration:underline}
+.sr-only{position:absolute;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;width:1px;height:1px}
+.productos-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin-top:30px}
+.tarjeta-producto{background:#fff;border:1px solid #e1e9e3;border-radius:12px;overflow:hidden;display:flex;flex-direction:column;min-height:350px;box-shadow:0 2px 8px #17362409;transition:transform .2s,box-shadow .2s}.tarjeta-producto:hover{transform:translateY(-3px);box-shadow:0 8px 20px #17362417}
+.tarjeta-imagen-link{display:block;color:inherit;text-decoration:none}.tarjeta-producto .imagen-producto{height:195px;border:0;border-bottom:1px solid #eff2ef;border-radius:0}
+.tarjeta-contenido{padding:14px 16px 18px;display:flex;flex-direction:column;gap:12px;flex:1}.tarjeta-titulo{font-size:14px;line-height:1.35;min-height:42px;text-transform:uppercase;font-weight:800;color:#173624;text-decoration:none}.tarjeta-titulo:hover{color:#168b34}.tarjeta-precio{font-size:20px;line-height:1.2;color:#168b34;font-weight:800}.tarjeta-precio.sin-precio{font-size:14px;color:#8b684a}.tarjeta-producto .boton-verde{margin-top:auto;width:100%;font-size:14px;min-height:40px}
+.imagen-producto{background:#f5f7f5;width:100%;height:100%;overflow:hidden;display:grid;place-items:center;border:1px solid #edf0ec;border-radius:10px}.imagen-producto img{display:block;width:100%;height:100%;object-fit:contain}.imagen-pendiente{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:11px;color:#8ba298;padding:15px;text-align:center;height:100%;width:100%}.imagen-pendiente small{font-size:11px;line-height:1.4}
+.footer-dec{width:100%;background:#173624;color:white}.footer-contenido{max-width:1440px;margin:auto;min-height:390px;display:grid;grid-template-columns:1.1fr .8fr 1.2fr;gap:60px;padding:65px 64px 30px;align-content:start}.footer-dec h2{font-size:27px;margin:0 0 18px}.footer-dec h3{font-size:18px;margin:3px 0 18px}.footer-dec p{color:#dce7de;margin:0;font-size:14px}.footer-enlaces{display:flex;flex-direction:column;gap:14px}.footer-enlaces a,.footer-enlaces p{color:#dce7de;text-decoration:none;display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.5}.footer-enlaces a:hover{color:#fff}.footer-enlaces svg{flex-shrink:0}.footer-base{grid-column:1/-1;margin-top:48px;border-top:1px solid #ffffff36;padding:20px 0 0;text-align:center;color:#dce7de;font-size:11px}.footer-base a{color:#dce7de;margin-left:8px}
+.barra-filtros{display:flex;gap:24px;margin:28px 0 32px;flex-wrap:wrap}.barra-filtros label{min-width:290px}.barra-filtros select{width:100%;appearance:auto;background:#fff;border:1px solid #d6e1d8;border-radius:7px;padding:15px 18px;color:#173624;font-weight:600;font-size:14px}
+.catalogo-pagina{padding-top:55px;padding-bottom:85px;min-height:1020px}.catalogo-pagina h1{margin-bottom:12px}.resultado-busqueda{font-size:15px;color:#667085}.cargar-contenedor{text-align:center;margin:45px}.aclaracion-catalogo{font-size:12px;color:#87938b;margin:35px 0 0}.estado-vacio{padding:65px 22px;text-align:center;background:#f7f9f7;border:1px solid #e1e9e3;border-radius:12px;color:#667085}.estado-vacio h2{color:#173624}
+.detalle-pagina{padding-top:28px;min-height:1050px}.volver-link{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font-size:15px;color:#168b34;font-weight:600;margin:0 0 28px}.detalle-cuadricula{display:grid;grid-template-columns:minmax(0,590px) minmax(0,1fr);gap:56px;align-items:start}
+.detalle-foto{height:440px;background:white;border-color:#e8eeea}.detalle-info h1{font-size:32px;max-width:550px;margin:27px 0 27px}.detalle-precio{font-size:38px;color:#168b34;font-weight:800;margin-bottom:18px}.detalle-disponibilidad{font-size:15px;line-height:1.7;color:#5f6e63}.detalle-acciones{display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin:27px 0 50px}.detalle-acciones .boton-verde{min-width:250px}.control-cantidad{display:inline-flex;height:48px;align-items:center;border:1px solid #e1e9e3;border-radius:8px;overflow:hidden;background:#fff}.control-cantidad span{width:50px;text-align:center;font-size:15px;color:#173624}.control-cantidad button{width:46px;height:100%;display:grid;place-items:center;border:0;background:#fff;color:#667085}.control-cantidad button:hover{background:#edf5ef}.detalle-info h2{font-size:22px;margin:0 0 14px}.detalle-info>p:last-child{color:#667085;font-size:16px;line-height:1.7}.relacionados-seccion{padding-top:55px;padding-bottom:80px}.relacionados-seccion h2{font-size:26px}.relacionados-grid{grid-template-columns:repeat(3,minmax(0,310px))}
+.carrito-pagina{padding-top:40px;min-height:690px}.carrito-pagina>h1{font-size:36px;margin-bottom:37px}.carrito-grid{display:grid;grid-template-columns:minmax(0,850px) minmax(280px,430px);gap:30px;align-items:start}.carrito-fila{padding:20px;min-height:220px;border:1px solid #e1e9e3;border-radius:10px;display:flex;align-items:center;gap:24px;margin-bottom:16px}.carrito-fila>a:first-child{display:block;flex:0 0 230px;height:175px}.carrito-foto{width:100%;height:100%;border:0;background:#fff}.carrito-fila-info{display:flex;flex:1;min-width:0;flex-direction:column;align-items:flex-start;gap:16px}.carrito-fila-info a{text-decoration:none}.carrito-fila-info h2{color:#173624;font-size:18px;line-height:1.3;font-weight:800;margin:0}.carrito-fila-info strong{color:#168b34;font-size:22px}.carrito-fila-info .control-cantidad{height:43px}.carrito-fila-info .control-cantidad button{width:42px}.eliminar-producto{margin-left:auto;background:#fff0f0;color:#de5656;border:0;border-radius:8px;padding:9px}.eliminar-producto:hover{background:#ffdddd}.deshacer{display:flex;align-items:center;gap:5px;margin-top:14px}.carrito-vacio{display:flex;flex-direction:column;align-items:center;gap:10px}.carrito-vacio h2,.carrito-vacio p{margin:0}.carrito-vacio svg{color:#168b34}.carrito-vacio .boton-verde{margin-top:10px}
+.resumen-cotizacion{padding:26px;border-radius:14px;border:1px solid #e1e9e3;background:#f4f7f5;display:flex;flex-direction:column;gap:23px}.resumen-cotizacion h2{font-size:22px;margin:0 0 2px}.resumen-linea{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:15px;color:#667085}.resumen-linea b{color:#173624}.resumen-linea.total{color:#173624;font-weight:600}.resumen-linea.total strong{font-size:23px;color:#168b34}.resumen-cotizacion>p{font-size:13px;color:#738078;line-height:1.5;margin:0}.resumen-cotizacion .boton-verde{width:100%;font-size:15px}.resumen-cotizacion small{font-size:11px;color:#85958a;line-height:1.4}
+.login-pagina{width:100%;display:flex;justify-content:center;align-items:flex-start;min-height:600px;padding:90px 20px 70px}.login-tarjeta{border:1px solid #e1e9e3;border-radius:16px;background:#fff;width:540px;max-width:100%;padding:50px 60px 48px;text-align:center}.login-tarjeta h1{font-size:32px;font-weight:800;margin:0 0 19px}.login-subtitulo{font-size:15px;color:#667085;margin:0 0 43px}.login-form{display:flex;flex-direction:column;gap:23px;text-align:left}.login-form label{font-size:15px;font-weight:600;color:#173624;display:flex;flex-direction:column;gap:9px}.login-form input{height:50px;padding:0 17px;border:1px solid #e1e9e3;border-radius:8px;color:#173624;outline-color:#168b34}.login-form input::placeholder{color:#a1afa4}.login-form .boton-verde{margin-top:8px;min-height:48px}.login-enlace{font-size:14px;color:#667085;margin:20px 0 0}.login-enlace .boton-enlace{text-decoration:none}.aviso-config{font-size:12px;padding:10px;background:#fff4e6;border-radius:8px;margin:15px 0 0;color:#86613e}.mensaje-formulario{font-size:13px;color:#9d392a}
+.historial-pagina{min-height:730px}.tabla-contenedor{border:1px solid #e1e9e3;border-radius:12px;overflow:auto;padding:17px 24px 30px}.tabla-contenedor table{width:100%;border-collapse:collapse;text-align:left;table-layout:fixed}.tabla-contenedor th{font-size:15px;color:#173624;font-weight:800;padding:16px 20px;border-bottom:1px solid #acc4ae}.tabla-contenedor td{color:#173624;padding:25px 20px;font-size:14px}.tabla-contenedor td a{font-weight:700;text-decoration:none;color:#168b34}.tabla-contenedor td a:hover{text-decoration:underline}.historial-pagina>small{display:block;margin-top:20px;color:#849084;font-size:12px}.sin-registros{text-align:center;color:#667085!important;padding:50px!important}.estado{font-weight:600}.estado-pendiente{color:#b45309}.estado-confirmada{color:#168b34}.banner-demo{background:#fff4e6;border:1px solid #f5dbb5;border-radius:8px;padding:12px 16px;color:#795a34;font-size:13px;margin:15px 0}
+.admin-pagina{min-height:940px;padding-top:40px}.admin-encabezado{display:flex;align-items:center;justify-content:space-between;gap:20px}.admin-encabezado h1{margin:0 0 14px;font-size:36px}.admin-encabezado .subtitulo{margin:0}.admin-encabezado .boton-verde{min-width:255px}.admin-indicadores{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin:60px 0 55px}.indicador{min-height:155px;padding:24px;background:#f4f7f5;border:1px solid #e1e9e3;border-radius:12px;display:flex;flex-direction:column;align-items:flex-start;gap:12px}.indicador svg{color:#168b34}.indicador span{font-size:16px;color:#5e6f63}.indicador strong{font-size:35px;color:#173624;line-height:1}.indicador-pendiente{background:#fff4e6}.indicador-pendiente svg{color:#b45309}.admin-subtitulo{font-size:22px;margin:0 0 20px}.admin-pagina .tabla-contenedor{min-height:250px}.info-pagina{min-height:600px}.info-pagina .categorias-grid{margin-top:35px}.info-pagina>p{max-width:700px;color:#667085}.marcas-lista{display:flex;gap:14px;flex-wrap:wrap;margin:40px 0}.marcas-lista a{padding:13px 20px;border:1px solid #e1e9e3;border-radius:10px;text-decoration:none;font-weight:600}
+.pdf-pagina{max-width:980px;margin:auto;padding:40px 28px 65px;background:white;color:#173624;font-family:Inter,Arial,sans-serif}.pdf-acciones{display:flex;align-items:center;gap:20px;margin-bottom:30px}.pdf-encabezado{border-bottom:2px solid #168b34;margin-bottom:35px}.pdf-encabezado h1{margin:0;color:#168b34}.pdf-encabezado h2{font-size:23px}.pdf-encabezado p{margin:6px 0}.pdf-pagina table{width:100%;border-collapse:collapse}.pdf-pagina th,.pdf-pagina td{border-bottom:1px solid #dae7dc;padding:15px;text-align:left;font-size:13px}.pdf-pagina th{background:#f4f7f5}.pdf-nota{font-weight:700;color:#b45309}
+@media(max-width:1080px){.productos-grid{grid-template-columns:repeat(3,1fr)}.carrito-grid{grid-template-columns:1fr}.resumen-cotizacion{max-width:600px}.detalle-cuadricula{grid-template-columns:1fr 1fr;gap:25px}.detalle-foto{height:380px}.admin-indicadores{gap:12px}}
+@media(max-width:800px){.pagina-contenido,.seccion-contenido{padding:36px 25px}.productos-grid{grid-template-columns:repeat(2,1fr);gap:15px}.footer-contenido{grid-template-columns:1fr 1fr;gap:25px;padding:44px 25px 25px;min-height:0}.footer-contenido section:last-of-type{grid-column:1/-1}.footer-base{margin-top:15px}.detalle-cuadricula{grid-template-columns:1fr}.detalle-foto{height:340px}.detalle-info h1{margin-top:0}.relacionados-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.admin-indicadores{grid-template-columns:1fr}.admin-encabezado{align-items:flex-start;flex-direction:column}.admin-encabezado .boton-verde{min-width:0}.tabla-contenedor{padding:8px}.tabla-contenedor table{min-width:520px}.login-pagina{padding-top:45px}}
+@media(max-width:520px){h1,.pagina-contenido>h1{font-size:28px}.seccion-contenido h2{font-size:24px}.productos-grid,.relacionados-grid{grid-template-columns:1fr 1fr;gap:9px}.tarjeta-contenido{padding:9px;gap:8px}.tarjeta-titulo{font-size:11px}.tarjeta-precio{font-size:15px}.tarjeta-producto{min-height:295px}.tarjeta-producto .imagen-producto{height:130px}.tarjeta-producto .boton-verde{font-size:11px;padding:6px;min-height:38px}.tarjeta-producto .boton-verde svg{display:none}.carrito-fila{padding:10px;gap:8px;min-height:150px}.carrito-fila>a:first-child{flex-basis:95px;height:110px}.carrito-fila-info h2{font-size:12px}.carrito-fila-info strong{font-size:15px}.carrito-fila-info{gap:8px}.control-cantidad{height:37px}.control-cantidad button{width:30px}.control-cantidad span{width:28px}.eliminar-producto{padding:5px}.login-tarjeta{padding:34px 23px}.footer-contenido{grid-template-columns:1fr}.footer-contenido section:last-of-type{grid-column:auto}.footer-base{grid-column:auto}.imagen-pendiente small{font-size:9px}}
+@media print{.pdf-acciones{display:none}.pdf-pagina{max-width:none;margin:0;padding:0}.pdf-nota{color:#b45309}body{background:#fff}@page{margin:15mm}}
+
+
+/* Ajustar imagen del panel de 18W */
+.tarjeta-producto .imagen-producto img[src*="reflector-solar-300w"] {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Ajustar imagen del panel de 18W */
+.tarjeta-producto .imagen-producto img[src*="panel-sobreponer-18w"] {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Ajustar imagen del extractor */
+.tarjeta-producto .imagen-producto img[src*="extractor-industrial-16"] {
+  width: 75%;
+  height: 75%;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Ajustar imagen de la cinta */
+.tarjeta-producto .imagen-producto img[src*="cinta-led-neonflex"] {
+  width: 75%;
+  height: 75%;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Ajustar imagen del duplex */
+.tarjeta-producto .imagen-producto img[src*="cable-duplex-2x18"] {
+  width: 75%;
+  height: 75%;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Ajustar imagen protector de voltaje */
+.tarjeta-producto .imagen-producto img[src*="protector-voltaje-120vac"] {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Ajustar imagen del toma doble naranja */
+.tarjeta-producto .imagen-producto img[src*="toma doble naranja"] {
+  width: 80%;
+  height: 90%;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Ajustar imagen del breaker */
+.tarjeta-producto .imagen-producto img[src*="breaker-20a-referencia.png"] {
+  width: 30%;
+  height: 90%;
+  object-fit: contain;
+  object-position: center;
+}
+/* Ajustar imagen del interruptor doble Uduke */
+.tarjeta-producto .imagen-producto img[src*="interruptor-doble-uduke.png"] {
+  width: 60%;
+  height: 90%;
+  object-fit: contain;
+  object-position: center;
+}
+/* Ajustar imagen del toma doble Uduke */
+.tarjeta-producto .imagen-producto img[src*="toma-doble-uduke.png"] {
+  width: 50%;
+  height: 90%;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Ajustar imagen del interruptor y toma doble Uduke */
+.tarjeta-producto .imagen-producto img[src*="interruptor+toma.png"] {
+  width: 50%;
+  height: 90%;
+  object-fit: contain;
+  object-position: center;
+} 
+
+/* Ajustar imagen del interruptor triple Uduke */
+.tarjeta-producto .imagen-producto img[src*="interruptor-triple.png"] {
+  width: 50%;
+  height: 90%;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Ajustar imagen del tubo emt */
+.tarjeta-producto .imagen-producto img[src*="tubo-emt.png"] {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  object-position: center;
+}
