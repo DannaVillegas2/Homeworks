@@ -1,0 +1,17 @@
+{
+  "name": "parcial3",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "type": "module",
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "sass": "^1.89.2",
+    "vite": "^7.3.8"
+  }
+}

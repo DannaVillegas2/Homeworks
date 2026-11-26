@@ -1,0 +1,48 @@
+$tinta: #18372f;
+$verde: #b8f677;
+$borde: #ccd8cd;
+
+@mixin panel($fondo: #fffef8) {
+  background: $fondo;
+  border: 1px solid $borde;
+  border-radius: 1.25rem;
+  padding: clamp(1.1rem, 3vw, 2rem);
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font: 1rem/1.5 "Segoe UI", sans-serif; color: $tinta; background: #eff3ec; }
+main { max-width: 72rem; padding: 0 5% 3rem; margin: auto; }
+header, .hero, .fila { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+header { padding: 1.1rem 0; }
+.marca { font-weight: 800; font-size: 1.4rem; letter-spacing: -.04em; }
+.hero {
+  @include panel($tinta);
+  color: #fffef8; margin-bottom: 1rem; overflow: hidden;
+  h1 { font-size: clamp(2.5rem, 6vw, 5rem); line-height: 1; letter-spacing: -.06em; }
+}
+.disco { flex: 0 0 clamp(5rem, 16vw, 11rem); aspect-ratio: 1; border-radius: 50%;
+  background: radial-gradient(circle, $tinta 3%, $verde 4% 20%, transparent 21%), repeating-radial-gradient(circle, #30564a 0 3px, #122d25 4px 6px); }
+.columnas { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.tarjeta { @include panel; min-width: 0; overflow-wrap: anywhere; }
+h1, h2, h3, p { margin: 0; }
+h2 { font-size: 1.5rem; letter-spacing: -.035em; }
+h3 { margin-top: 1.6rem; }
+p { margin: .5rem 0 1rem; }
+p:empty { margin: 0; }
+ol { padding-left: 1.7rem; margin-bottom: 0; }
+li { border-bottom: 1px solid $borde; }
+li::marker { font-weight: bold; }
+button, input, select { font: inherit; color: inherit; }
+button { cursor: pointer; }
+button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid #007957; outline-offset: 2px; }
+.fila { width: 100%; border: 0; background: transparent; padding: .65rem .4rem; text-align: left; }
+.fila:hover { background: #edf4e9; }
+small { display: block; }
+label { display: grid; gap: .2rem; margin-top: .7rem; font-weight: 600; }
+input, select { width: 100%; border: 1px solid #869b8c; padding: .55rem; border-radius: .5rem; background: white; }
+.opciones { display: flex; flex-wrap: wrap; gap: .45rem; margin-top: .75rem; }
+.opciones button, .accion { border: 1px solid $borde; border-radius: 2rem; background: #eff4ec; padding: .45rem .9rem; }
+.opciones button:hover, .opciones button[aria-pressed=true], .accion { background: $verde; border-color: $tinta; }
+.accion { font-weight: 700; }
+form .accion { margin-top: 1rem; }
+@media (max-width: 680px) { .columnas { grid-template-columns: 1fr; } }
