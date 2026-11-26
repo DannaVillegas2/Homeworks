@@ -22,13 +22,18 @@ La versión desplegada debe actualizarse con los cambios más recientes del proy
 
 ---
 
-## Integrantes del equipo
 
-Completar con los nombres y apellidos de los integrantes del proyecto:
+## Integrante del proyecto
 
-- Danna Valentina Villegas Vargas - 2240027
+Danna Valentina Villegas Vargas - 2240027
 
-Se trabajo de manera individual en este proyecto final.
+Universidad Autónoma de Occidente  
+Asignatura: Estructura de Datos y Algoritmos
+
+El proyecto fue desarrollado de manera individual.
+
+La rama `ProyectoFinal-DEC` contiene el desarrollo de la aplicación, sus funcionalidades, las estructuras de datos, las pruebas y la documentación técnica.
+
 
 ---
 
